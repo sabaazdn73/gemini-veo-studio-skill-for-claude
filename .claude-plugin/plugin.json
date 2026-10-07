@@ -18,5 +18,10 @@
     "ai-video",
     "marketing"
   ],
-  "icon": "./.claude-plugin/icon.png"
+  "icon": "./.claude-plugin/icon.png",
+  "displayName": "Gemini Veo Studio Skill for Claude",
+  "documentationUrl": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude#readme",
+  "supportUrl": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude/issues",
+  "privacyPolicyUrl": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude/blob/main/LICENSE"
 }
