@@ -5,3 +5,4 @@ skills/gemini-veo-studio/panel.html
 skills/gemini-veo-studio/assets/thumbs/
 __pycache__/
 .env
+!.claude-plugin/*.json

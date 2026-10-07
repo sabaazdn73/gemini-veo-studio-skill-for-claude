@@ -1,0 +1,16 @@
+{
+  "name": "gemini-veo-studio",
+  "description": "Gemini Veo Studio Skill for Claude: AI video generation with Google Veo 3.1.",
+  "owner": {
+    "name": "Saba Azadegan",
+    "url": "https://github.com/sabaazdn73"
+  },
+  "plugins": [
+    {
+      "name": "gemini-veo-studio",
+      "source": "./",
+      "description": "Make AI videos with Google Veo 3.1 (Gemini API) from Claude: template panel, generation, post-production.",
+      "version": "1.0.0"
+    }
+  ]
+}
