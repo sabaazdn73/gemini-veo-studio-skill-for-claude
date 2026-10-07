@@ -8,6 +8,8 @@ This **Agent Skill** lets Claude (Claude Code or the Claude app) make short vide
 - **Generation:** Claude writes the shot list, generates each clip with Veo (with native audio), and checks it.
 - **Finishing:** Claude joins the shots, keeps Veo's voice, can swap a stand-in for your real mascot, puts a real app UI on a phone, cleans garbled text and adds an end card.
 
+> **Status: early release (v1.0.0).** The scripts follow Google's documented Gemini API for Veo 3.1; please open an issue if a call fails for you.
+>
 > Not affiliated with Google or Anthropic. You use your own Gemini API key and pay Google for what you generate.
 
 
