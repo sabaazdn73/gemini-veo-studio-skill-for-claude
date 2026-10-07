@@ -2,9 +2,21 @@
   "name": "gemini-veo-studio",
   "version": "1.0.0",
   "description": "Gemini Veo Studio Skill for Claude: make AI videos with Google Veo 3.1 through the Gemini API. A template panel, text-to-video, image-to-video, character reference images, native audio, and post-production to a finished MP4. Uses your own Gemini API key.",
-  "author": { "name": "Saba Azadegan", "url": "https://github.com/sabaazdn73" },
+  "author": {
+    "name": "Saba Azadegan",
+    "url": "https://github.com/sabaazdn73"
+  },
   "homepage": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude",
   "repository": "https://github.com/sabaazdn73/gemini-veo-studio-skill-for-claude",
   "license": "MIT",
-  "keywords": ["video", "veo", "gemini", "text-to-video", "image-to-video", "ai-video", "marketing"]
+  "keywords": [
+    "video",
+    "veo",
+    "gemini",
+    "text-to-video",
+    "image-to-video",
+    "ai-video",
+    "marketing"
+  ],
+  "icon": "./.claude-plugin/icon.png"
 }
