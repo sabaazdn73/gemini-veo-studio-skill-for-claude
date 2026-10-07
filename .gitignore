@@ -1,0 +1,7 @@
+*.mp4
+*.json
+!assets/templates.json
+panel.html
+assets/thumbs/
+__pycache__/
+.env
