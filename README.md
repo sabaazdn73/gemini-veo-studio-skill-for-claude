@@ -77,13 +77,15 @@ Put the key in your shell (and in `~/.zshrc` or `~/.bashrc` to keep it):
 export GEMINI_API_KEY="AIza..."
 ```
 
-Add the skill to Claude:
-- **Claude Code:** copy the folder to `~/.claude/skills/gemini-veo-studio/`.
-- **Claude app:** zip the folder and upload it under **Settings → Capabilities → Skills**. Claude needs a shell that can reach Google, so use it in Claude Code or with your computer linked.
+Add the skill to Claude (pick one):
+- **Claude Code, as a plugin:** `claude plugin marketplace add sabaazdn73/gemini-veo-studio-skill-for-claude`, then `claude plugin install gemini-veo-studio@gemini-veo-studio`. Or run `/plugin` inside Claude Code and add it from there.
+- **Claude Code, as a plain skill:** copy `skills/gemini-veo-studio/` to `~/.claude/skills/gemini-veo-studio/`.
+- **Claude app:** zip the `skills/gemini-veo-studio` folder and upload it under **Settings → Capabilities → Skills**. Claude needs a shell that can reach Google, so use it in Claude Code or with your computer linked.
 
 Check it works (this is free):
 
 ```bash
+cd skills/gemini-veo-studio
 python3 scripts/veo.py --list
 python3 scripts/veo.py --template talking-pet --set subject="a cream cat" --set line="Hi!" --dry-run
 ```
@@ -101,7 +103,7 @@ What happens next:
 1. **Panel.** Claude opens the template gallery (`panel.html`) and asks which category and template you want. You can also just describe your own idea.
 2. **Shot list.** Claude writes 3 to 5 shots (8 s each) with camera, light, dialogue and sound. It shows you the list **before** spending anything. You approve or edit it.
 3. **Generate.** Claude runs `scripts/veo.py` once per shot. Each takes about 1 to 6 minutes. It looks at every clip and regenerates bad ones (each retry costs).
-4. **Finish.** Claude joins the shots, keeps Veo's audio, and adds what you asked for, following `references/post-production.md`:
+4. **Finish.** Claude joins the shots, keeps Veo's audio, and adds what you asked for, following `skills/gemini-veo-studio/references/post-production.md`:
    - your real mascot in place of a stand-in, with the mouth moving to the voice;
    - your app's screens on a green-screen phone;
    - clean captions;
@@ -111,6 +113,8 @@ What happens next:
 ---
 
 ## 4. Use the scripts yourself
+
+From `skills/gemini-veo-studio/`:
 
 ```bash
 python3 scripts/panel.py                    # writes panel.html, the template gallery
@@ -135,7 +139,7 @@ Each run saves the `.mp4` and a `.json` with the request and the video's URI. Ex
 - Videos carry Google's SynthID watermark.
 
 ## Add your own templates
-Edit `assets/templates.json`: each template has an `id`, `category`, `title`, `emoji`, what it `needs`, a default `aspect` and a `prompt` with `{placeholders}`.
+Edit `skills/gemini-veo-studio/assets/templates.json`: each template has an `id`, `category`, `title`, `emoji`, what it `needs`, a default `aspect` and a `prompt` with `{placeholders}`.
 
 ## Keywords
 Claude skill, Claude Code skill, Agent Skills, Anthropic Claude, Google Veo 3.1, Gemini API, Veo API, AI video generator, text-to-video, image-to-video, AI video with audio, mascot video, product demo video, open source.

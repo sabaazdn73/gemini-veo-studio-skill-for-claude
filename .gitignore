@@ -1,7 +1,7 @@
 *.mp4
 *.json
-!assets/templates.json
-panel.html
-assets/thumbs/
+!skills/gemini-veo-studio/assets/templates.json
+skills/gemini-veo-studio/panel.html
+skills/gemini-veo-studio/assets/thumbs/
 __pycache__/
 .env
