@@ -140,6 +140,9 @@ Each run saves the `.mp4` and a `.json` with the request and the video's URI. Ex
 - Results vary; plan for a retry or two per shot.
 - Videos carry Google's SynthID watermark.
 
+## Data and privacy
+The skill has no server. Your prompts and any images you pass are sent from your machine **only to Google's Gemini API** (`generativelanguage.googleapis.com`) with your own key; Google's API terms apply. Nothing is sent to the author or anyone else. See [PRIVACY.md](PRIVACY.md).
+
 ## Add your own templates
 Edit `skills/gemini-veo-studio/assets/templates.json`: each template has an `id`, `category`, `title`, `emoji`, what it `needs`, a default `aspect` and a `prompt` with `{placeholders}`.
 
